@@ -7,11 +7,15 @@
 
 <p>Click the button to get the URL of the audio.</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="audioPlay('audio1')">Beni mi Trolluyon </button>
+<audio id="audio1" src="audio/beni mi trollüyon.mp3" ></audio>
+
+<button onclick="audioPlay('audio2')">Kek alin </button>
+<audio id="audio2" src="audio/KEK ALIN (mp3cut.net).mp3" ></audio>
 
 <script>
-function myFunction() {
-    var a = "audio/beni mi trollüyon.mp3"
+function audioPlay(aid) {
+    var a = document.getElementById("aid");
     a.play();
 }
 </script>
