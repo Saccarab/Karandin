@@ -1,27 +1,130 @@
 <!DOCTYPE html>
 <html>
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+<body>
+<!-- 
+<audio id="becerdin" controls src="http://vocaroo.com/i/s1RkGX8T9CT9.mp3">
+</audio> -->
 
-    <body>
-    <!-- 
-    <audio id="becerdin" controls src="http://vocaroo.com/i/s1RkGX8T9CT9.mp3">
-    </audio> -->
 
-    <p>Click the button to get the URL of the audio.</p>
+<button onclick="audioPlay('audio1')">Beni mi Trolluyon </button>
+<audio id="audio1" src="audio/beni mi trollüyon.mp3" ></audio>
 
-    <button onclick="audioPlay('audio1')">Beni mi Trolluyon </button>
-    <audio id="audio1" src="audio/beni mi trollüyon.mp3" ></audio>
+<button onclick="audioPlay('audio2')">Kek alin </button>
+<audio id="audio2" src="audio/KEK ALIN (mp3cut.net).mp3" ></audio>
 
-    <button onclick="audioPlay('audio2')">Kek alin </button>
-    <audio id="audio2" src="audio/KEK ALIN (mp3cut.net).mp3" ></audio>
+<button onclick="audioPlay('audio3')">Beni mi Trolluyon </button>
+<audio id="audio3" src="audio/AMINA KOYDULAR ORTALIGIN (mp3cut.net).mp3" ></audio>
 
-    <script>
-    function audioPlay(aid) {
-        var a = document.getElementById(aid);
-        a.play();
-    }
-    </script>
+<button onclick="audioPlay('audio4')">Kek alin </button>
+<audio id="audio4" src="audio/NAPIYOSUNUZ ORDA (mp3cut.net).mp3" ></audio>
 
-    </body>
+<button onclick="audioPlay('audio5')">Beni mi Trolluyon </button>
+<audio id="audio5" src="audio/2 stack (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio6')">Kek alin </button>
+<audio id="audio6" src="audio/KEK ALIN (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio7')">Beni mi Trolluyon </button>
+<audio id="audio7" src="audio/WTF (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio8')">Kek alin </button>
+<audio id="audio8" src="audio/bunlar niye wow oynuyo (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio9')">Beni mi Trolluyon </button>
+<audio id="audio9" src="audio/ciddi misin (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio10')">Kek alin </button>
+<audio id="audio10" src="audio/coolsun yani.mp3" ></audio>
+
+<button onclick="audioPlay('audio11')">Beni mi Trolluyon </button>
+<audio id="audio11" src="audio/dediğimi yapıcaksın.mp3" ></audio>
+
+<button onclick="audioPlay('audio12')">Kek alin </button>
+<audio id="audio12" src="audio/diyelim ki anlamıyorum.mp3" ></audio>
+
+<button onclick="audioPlay('audio13')">Beni mi Trolluyon </button>
+<audio id="audio13" src="audio/duydunuz mu cevabı inanilmaz degil mi.mp3" ></audio>
+
+<button onclick="audioPlay('audio14')">Kek alin </button>
+<audio id="audio14" src="audio/iyi tekcan.mp3" ></audio>
+
+<button onclick="audioPlay('audio15')">Beni mi Trolluyon </button>
+<audio id="audio15" src="audio/kek yiyin (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio16')">Kek alin </button>
+<audio id="audio16" src="audio/kişisel defansif cooldown.mp3" ></audio>
+
+<button onclick="audioPlay('audio17')">Beni mi Trolluyon </button>
+<audio id="audio17" src="audio/komedi misin ya murat can (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio18')">Kek alin </button>
+<audio id="audio18" src="audio/niye wow.mp3 (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio19')">Beni mi Trolluyon </button>
+<audio id="audio19" src="audio/sana hiçbir şey soylemiyorum (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio20')">Kek alin </button>
+<audio id="audio20" src="audio/sana madalya.mp3" ></audio>
+
+<button onclick="audioPlay('audio21')">Beni mi Trolluyon </button>
+<audio id="audio21" src="audio/seni sevmiyolar bu guildde.mp3" ></audio>
+
+<button onclick="audioPlay('audio22')">Kek alin </button>
+<audio id="audio22" src="audio/tuşa bas ve cc at (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio23')">Beni mi Trolluyon </button>
+<audio id="audio23" src="audio/uykun mu geldi senin (mp3cut.net).mp3" ></audio>
+
+<button onclick="audioPlay('audio24')">Kek alin </button>
+<audio id="audio24" src="audio/zamanı soyluyorum gene ölüyosun ali.mp3" ></audio>
+
+<button onclick="audioPlay('audio25')">Beni mi Trolluyon </button>
+<audio id="audio25" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
+
+
+
+
+<script>
+
+var current;
+function audioPlay(aid) {
+
+	current.pause();
+	current = document.getElementById(aid);
+    var inc = document.getElementById(aid);
+    inc.play();
+
+}
+
+
+//  2 stack (mp3cut.net).mp3
+// AMINA KOYDULAR ORTALIGIN (mp3cut.net).mp3
+// KEK ALIN (mp3cut.net).mp3
+// NAPIYOSUNUZ ORDA (mp3cut.net).mp3
+// WTF (mp3cut.net).mp3
+// beni mi trollüyon.mp3
+// bu kadar olamazsınız.mp3
+// bunlar niye wow oynuyo (mp3cut.net).mp3	
+// ciddi misin (mp3cut.net).mp3	
+// coolsun yani.mp3	
+// critledi.mp3	
+// dediğimi yapıcaksın.mp3	
+// diyelim ki anlamıyorum.mp3	
+// duydunuz mu cevabı inanilmaz degil mi.mp3	
+// iyi tekcan.mp3	Add karandin 
+// kek yiyin (mp3cut.net).mp3	
+// kişisel defansif cooldown.mp3	
+// komedi misin ya murat can (mp3cut.net).mp3
+// mikrofununu kapatıyosun (mp3cut.net).mp3	
+// sana hiçbir şey soylemiyorum (mp3cut.net).mp3	
+// sana madalya.mp3	
+// seni sevmiyolar bu guildde.mp3	
+// tuşa bas ve cc at (mp3cut.net).mp3	
+// uykun mu geldi senin (mp3cut.net).mp3	
+// zamanı soyluyorum gene ölüyosun ali.mp3	
+// ÖLME BE ADAM (mp3cut.net.mp3
+
+</script>
+
+</body>
 </html>
