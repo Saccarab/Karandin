@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-<body>
-<!-- 
-<audio id="becerdin" controls src="http://vocaroo.com/i/s1RkGX8T9CT9.mp3">
-</audio> -->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
-<p>Click the button to get the URL of the audio.</p>
+    <body>
+    <!-- 
+    <audio id="becerdin" controls src="http://vocaroo.com/i/s1RkGX8T9CT9.mp3">
+    </audio> -->
 
-<button onclick="audioPlay('audio1')">Beni mi Trolluyon </button>
-<audio id="audio1" src="audio/beni mi trollüyon.mp3" ></audio>
+    <p>Click the button to get the URL of the audio.</p>
 
-<button onclick="audioPlay('audio2')">Kek alin </button>
-<audio id="audio2" src="audio/KEK ALIN (mp3cut.net).mp3" ></audio>
+    <button onclick="audioPlay('audio1')">Beni mi Trolluyon </button>
+    <audio id="audio1" src="audio/beni mi trollüyon.mp3" ></audio>
 
-<script>
-function audioPlay(aid) {
-    var a = document.getElementById(aid);
-    a.play();
-}
-</script>
+    <button onclick="audioPlay('audio2')">Kek alin </button>
+    <audio id="audio2" src="audio/KEK ALIN (mp3cut.net).mp3" ></audio>
 
-</body>
+    <script>
+    function audioPlay(aid) {
+        var a = document.getElementById(aid);
+        a.play();
+    }
+    </script>
+
+    </body>
 </html>
