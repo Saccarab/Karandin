@@ -1,86 +1,154 @@
 <!DOCTYPE html>
 <html>
-<body>
-<!-- 
-<audio id="becerdin" controls src="http://vocaroo.com/i/s1RkGX8T9CT9.mp3">
-</audio> -->
 
+<style>
 
-<button onclick="audioPlay('audio1')">Beni mi trolluyon </button>
-<audio id="audio1" src="audio/beni mi trollüyon.mp3" ></audio>
+.dd{
+    line-height:40px;
+    display: table;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.button{
+    background:#F00;
+    display: table-cell;
+}
 
-<button onclick="audioPlay('audio2')">KEK ALIN </button>
-<audio id="audio2" src="audio/KEK ALIN (mp3cut.net).mp3" ></audio>
+.dd button{
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+	margin:55px;
+}
+.dd button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
+.dd button:active {
+	position:relative;
+	top:1px;
+}
+.dd {
+	padding-left: 100px;
+	padding-right: 40px;
+	background-image: url("http://www.fotografindir.net/wp-content/uploads/2014/10/At-resimleri-twitter.jpg");
+	height: 100%; 
+	width: 90%; 
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
 
-<button onclick="audioPlay('audio3')">AMINA KOYDULAR ORTALIGIN </button>
-<audio id="audio3" src="audio/AMINA KOYDULAR ORTALIGIN (mp3cut.net).mp3" ></audio>
+</style>
+	<div class = "dd" >
 
-<button onclick="audioPlay('audio4')">NAPIYOSUNUZ ORDA </button>
-<audio id="audio4" src="audio/NAPIYOSUNUZ ORDA (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio1')">Beni mi trolluyon</button>
+	<audio id="audio1" src="audio/beni mi trollüyon.mp3" ></audio>
 
-<button onclick="audioPlay('audio5')">2 stack </button>
-<audio id="audio5" src="audio/2 stack (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio2')">KEK ALIN</button>
+	<audio id="audio2" src="audio/KEK ALIN (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio7')">WTF </button>
-<audio id="audio7" src="audio/WTF (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio3')">AMINA KOYDULAR ORTALIGIN</button>
+	<audio id="audio3" src="audio/AMINA KOYDULAR ORTALIGIN (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio8')">bunlar niye wow oynuyo </button>
-<audio id="audio8" src="audio/bunlar niye wow oynuyo (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio4')">NAPIYOSUNUZ ORDA</button>
+	<audio id="audio4" src="audio/NAPIYOSUNUZ ORDA (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio9')">ciddi misin </button>
-<audio id="audio9" src="audio/ciddi misin (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio5')">2 stack</button>
+	<audio id="audio5" src="audio/2 stack (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio10')">coolsun yani </button>
-<audio id="audio10" src="audio/coolsun yani.mp3" ></audio>
+	<button onclick="audioPlay('audio7')">WTF</button>
+	<audio id="audio7" src="audio/WTF (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio11')">dediğimi yapıcaksın </button>
-<audio id="audio11" src="audio/dediğimi yapıcaksın.mp3" ></audio>
+	<button onclick="audioPlay('audio8')">bunlar niye wow oynuyo</button>
+	<audio id="audio8" src="audio/bunlar niye wow oynuyo (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio12')">diyelim ki anlamıyorum </button>
-<audio id="audio12" src="audio/diyelim ki anlamıyorum.mp3" ></audio>
+	<button onclick="audioPlay('audio9')">ciddi misin</button>
+	<audio id="audio9" src="audio/ciddi misin (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio13')">duydunuz mu cevabı </button>
-<audio id="audio13" src="audio/duydunuz mu cevabı inanilmaz degil mi.mp3" ></audio>
+	<button onclick="audioPlay('audio10')">coolsun yani</button>
+	<audio id="audio10" src="audio/coolsun yani.mp3" ></audio>
 
-<button onclick="audioPlay('audio14')">iyi tekcan </button>
-<audio id="audio14" src="audio/iyi tekcan.mp3" ></audio>
+	<button onclick="audioPlay('audio11')">dediğimi yapıcaksın</button>
+	<audio id="audio11" src="audio/dediğimi yapıcaksın.mp3" ></audio>
 
-<button onclick="audioPlay('audio15')">kek yiyin </button>
-<audio id="audio15" src="audio/kek yiyin (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio12')">diyelim ki anlamıyorum</button>
+	<audio id="audio12" src="audio/diyelim ki anlamıyorum.mp3" ></audio>
 
-<button onclick="audioPlay('audio16')">kişisel defansif cooldown </button>
-<audio id="audio16" src="audio/kişisel defansif cooldown.mp3" ></audio>
+	<button onclick="audioPlay('audio13')">duydunuz mu cevabı</button>
+	<audio id="audio13" src="audio/duydunuz mu cevabı inanilmaz degil mi.mp3" ></audio>
 
-<button onclick="audioPlay('audio17')">komedi misin ya murat can </button>
-<audio id="audio17" src="audio/komedi misin ya murat can (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio14')">iyi tekcan</button>
+	<audio id="audio14" src="audio/iyi tekcan.mp3" ></audio>
 
-<button onclick="audioPlay('audio18')">ÖLME BE ADAM </button>
-<audio id="audio18" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio15')">kek yiyin</button>
+	<audio id="audio15" src="audio/kek yiyin (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio19')">sana hiçbir şey soylemiyorum </button>
-<audio id="audio19" src="audio/sana hiçbir şey soylemiyorum (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio16')">kişisel defansif cooldown</button>
+	<audio id="audio16" src="audio/kişisel defansif cooldown.mp3" ></audio>
 
-<button onclick="audioPlay('audio20')">madalya </button>
-<audio id="audio20" src="audio/sana madalya.mp3" ></audio>
+	<button onclick="audioPlay('audio17')">komedi misin</button>
+	<audio id="audio17" src="audio/komedi misin ya murat can (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio21')">seni sevmiyolar </button>
-<audio id="audio21" src="audio/seni sevmiyolar bu guildde.mp3" ></audio>
+	<button onclick="audioPlay('audio18')">ÖLME BE ADAM</button>
+	<audio id="audio18" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio22')">tuşa bas ve cc at </button>
-<audio id="audio22" src="audio/tuşa bas ve cc at (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio19')">sana hiçbir şey soylemiyorum</button>
+	<audio id="audio19" src="audio/sana hiçbir şey soylemiyorum (mp3cut.net).mp3" ></audio>
 
-<button onclick="audioPlay('audio23')">uykun mu geldi senin </button>
-<audio id="audio23" src="audio/uykun mu geldi senin (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio20')">madalya</button>
+	<audio id="audio20" src="audio/sana madalya.mp3" ></audio>
 
-<button onclick="audioPlay('audio24')">zamanı soyluyorum gene ölüyosun </button>
-<audio id="audio24" src="audio/zamanı soyluyorum gene ölüyosun ali.mp3" ></audio>
+	<button onclick="audioPlay('audio21')">seni sevmiyolar</button>
+	<audio id="audio21" src="audio/seni sevmiyolar bu guildde.mp3" ></audio>
 
+	<button onclick="audioPlay('audio22')">tuşa bas ve cc at</button>
+	<audio id="audio22" src="audio/tuşa bas ve cc at (mp3cut.net).mp3" ></audio>
 
+	<button onclick="audioPlay('audio23')">uykun mu geldi senin</button>
+	<audio id="audio23" src="audio/uykun mu geldi senin (mp3cut.net).mp3" ></audio>
 
-<audio id="dummy" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
+	<button onclick="audioPlay('audio24')">zamanı soyluyorum gene ölüyosun</button>
+	<audio id="audio24" src="audio/zamanı soyluyorum gene ölüyosun ali.mp3" ></audio>
 
+	<button onclick="audioPlay('audio25')">critledi</button>
+	<audio id="audio25" src="audio/critledi.mp3	" ></audio>
 
-
+	<audio id="dummy" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
+</div>
 <script>
 
 var current  = document.getElementById("dummy");
