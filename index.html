@@ -39,12 +39,12 @@
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:15px;
+	font-size:13px;
 	font-weight:bold;
 	padding:11px 23px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #2b665e;
-	margin:50px;
+	margin:48px;
 }
 .dd button:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
@@ -61,7 +61,7 @@
 	top:1px;
 }
 .dd {
-	padding-left: 90px;
+	padding-left: 30px;
 	padding-right: 50px;
 	padding-bottom: 20px;
 	background-image: url("http://www.fotografindir.net/wp-content/uploads/2014/10/At-resimleri-twitter.jpg");
@@ -147,7 +147,21 @@
 	<audio id="audio24" src="audio/zamanı soyluyorum gene ölüyosun ali.mp3" ></audio>
 
 	<button onclick="audioPlay('audio25')">critledi</button>
-	<audio id="audio25" src="audio/critledi.mp3	" ></audio>
+	<audio id="audio25" src="audio/critledi.mp3" ></audio>
+
+	<button onclick="audioPlay('audio26')">niye</button>
+	<audio id="audio26" src="audio/niye wow.mp3" ></audio>
+
+	<button onclick="audioPlay('audio27')">mikrofonunu kapatiyosun</button>
+	<audio id="audio27" src="audio/mikrofununu kapatıyosun (mp3cut.net).mp3" ></audio>
+
+	<button onclick="audioPlay('audio28')">becerdin</button>
+	<audio id="audio28" src="audio/becerdin ölmeyi (mp3cut.net).mp3" ></audio>
+
+	<button onclick="audioPlay('audio28')">bu kadar olamazsiniz</button>
+	<audio id="audio28" src="audio/bu kadar olamazsınız.mp3" ></audio>
+
+
 
 	<audio id="dummy" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
 </div>
@@ -158,6 +172,7 @@ var current  = document.getElementById("dummy");
 function audioPlay(aid) {
 
 	current.pause();
+	current.currentTime = 0;
 	current = document.getElementById(aid);
     var inc = document.getElementById(aid);
     inc.play();
