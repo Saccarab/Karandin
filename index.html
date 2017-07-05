@@ -81,12 +81,14 @@
 <button onclick="audioPlay('audio25')">Beni mi Trolluyon </button>
 <audio id="audio25" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
 
+<audio id="dummy" src="audio/ÖLME BE ADAM (mp3cut.net).mp3" ></audio>
 
 
 
 <script>
 
-var current;
+var current  = document.getElementById("dummy");
+
 function audioPlay(aid) {
 
 	current.pause();
